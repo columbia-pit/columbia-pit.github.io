@@ -1,78 +1,21 @@
-# Site Settings
-title: HAI-GEN 2021
-tagline: IUI Workshop on Human-AI Co-Creation with Generative Models
-email: chilton@cs.columbia.edu
-description: >
-  2nd Workshop on Human-AI Co-Creation with Generative Models
-# baseurl: "/bulma-clean-theme"
-url: "https://hai-gen2021.github.io"
-permalink: pretty
-#favicon: /path/to/favicon.png
-# gh_sponsor: chrisrhymes
-#hide_share_buttons: true
 
-paginate: 5
-paginate_path: "/blog/page:num"
-
-# Disqus Comments
-disqus:
-  # Leave shortname blank to disable comments site-wide.
-  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-  # shortname: my_disqus_shortname
-  shortname: csrhymes
-
-
-plugins:
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-feed
-  - jekyll-seo-tag
-  - kramdown
-  - rouge
-
-exclude: 
-  - Gemfile
-  - clean-theme.gemspec
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-
-livereload: true
 
 sass:
-  style: compressed
-  source_dir: _sass
+  sass_dir: assets/css
 
-#google_analytics: UA-code-here
+plugins:
+  - jekyll-autoprefixer
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      show_sidebar: true
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      author: "C.S. Rhymes"
-      layout: post
-      image: https://via.placeholder.com/1200x800
-      show_sidebar: true
-
-markdown: kramdown
-highlighter: rouge
-
-footer_menu: example_footer_menu
-
-collections:
-  products: 
-    output: true
-    layout: product
-    image: https://via.placeholder.com/800x600
-    show_sidebar: false
+title: "Jekyll Bootstrap Starter" # the name of your site, e.g. ACME Corp.
+tagline: "An awesome tagline"
+email: "your.email@gmail.com"
+description: >- # this means to ignore newlines until "baseurl:"
+author: name
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+google_analytics: UA-111111111-1
+twitter:
+  username: 
+  card: summary #keep this to generate a twitter share card
