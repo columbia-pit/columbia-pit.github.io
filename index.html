@@ -45,18 +45,51 @@ title: Home
                 </ol>
             </p>
             <p>
-                We develop and teach these practices though courses and independent projects. All our teaching materials are public on the <a href="/courses.html">Courses</a> page. Please use or adapt anything that is useful to you. Attribution to http://columbia-pit.com is appreciated. 
+                We develop and teach these practices though courses and independent projects. Examples of projects from Fall 2020 are below.
+                <!-- All our teaching materials are public on the <a href="/courses.html">Courses</a> page. Please use or adapt anything that is useful to you. Attribution to http://columbia-pit.com is appreciated.  -->
             </p>
 
          </div>
      </div>
 
-<!--     <div class="row">     
+    <div class="row">     
          <div class="col-md-9">
-            <div class="header"> Projects</div>
+            <div class="header">Fall 2020 Projects</div>
+        </div>
+    </div>
+           
+{% assign fall20_projects = site.fall20_projects | sort: 'last_name' %}
+{% for f2p in fall20_projects %}
+    <div class="row" style="margin-bottom: 20px"> 
+         <div class="col-md-auto">
+            <iframe style="" width="420" height="315" src="{{f2p.Video_url}}" frameborder="0" allowfullscreen>&nbsp;</iframe><br>
             
+            
+
+        </div>
+        <div class="col-md-6">    
+            <div class="project-title">{{ f2p.Title }} </div>
+            <div class="project-subtitle">{{ f2p.Subtitle }}</div>
+
+        
+            <br>
+           
+            <!-- <div class="project-process"><a href="{{ f2p.Link }}">Design Process</a></div> -->
+            <div class="project-text">{{ f2p.content }}</div>
+            <a class="project_process"  href="{{ f2p.Link }}" > Full write-up of the design process</a>
+            <br>
+
+            <div class="project-authors">{{ f2p.Authors }}</div>
+            <div class="project-mentor">Mentor: {{ f2p.Mentor }}</div>
+
+
+        
          </div>
-     </div> -->
+    </div>
+{% endfor %}
+
+         </div>
+     </div>
 
 </div>
 

@@ -17,8 +17,8 @@
 }
 
 a{
-    color:black;
-    font-weight:bold;
+    color:#3d85c6;
+    /*font-weight:bold;*/
 }
 
 .header{
@@ -28,6 +28,7 @@ a{
     font-size: 2.6em;
     line-height: 1em;
     font-family: 'IBM Plex Mono', monospace; 
+    margin-bottom:10px;
 }
 
 .subheader{
@@ -55,4 +56,31 @@ div.person-image > img {
 
 .person-email{
     font-style:italic;
+}
+
+/*
+Projects
+*/
+
+.project-title{
+    font-weight: bold;
+    font-size: 1.6em;
+    color: #3d85c6;
+}
+.project-subtitle{    
+    font-size: 1.2em;
+    color: #3d85c6;
+}
+
+.project-authors{
+    font-style: italic;
+    font-color:grey;
+}
+.project-mentor{
+    font-color:grey;
+}
+
+.project-process{
+    color: #3d85c6;
+    
 }
