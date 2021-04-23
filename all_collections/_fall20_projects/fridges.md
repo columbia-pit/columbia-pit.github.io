@@ -1,7 +1,7 @@
 ---
 Link: https://pazitschrecker.github.io/CFResources-PIT-case-study/#home
 Title:  Supporting Community Fridges
-Subtitle: KNOWLEDGE SHARING IN MUTUAL AID NETWORKS
+Subtitle: Knowledge sharing in mutual aid networks
 Authors: Sharon, Pazit, Francesca, Zoe, Rousol
 Video_url: https://www.youtube.com/embed/EvviRT_Z9j4
 Mentor: Celeste Layne
